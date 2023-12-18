@@ -77,10 +77,13 @@ INSERT INTO invoice(
 -- based on average KBB values
 
 INSERT INTO service(
-    car_id
+    car_id,
+    service_type
 ) VALUES (
-    2
+    2,
+    'Brakes and Oil Change'
 )
+-- added type from ERD
   
 INSERT INTO mechanic(
     ticket_id

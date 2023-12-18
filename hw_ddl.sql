@@ -37,7 +37,10 @@ CREATE TABLE serivce(
 
 ALTER TABLE serivce
   RENAME TO service;
-  
+
+ALTER TABLE service
+ADD service_type VARCHAR(25);
+
 CREATE TABLE mechanic(
     mechanic_id SERIAL PRIMARY KEY,
     ticket_id INTEGER NOT NULL,
